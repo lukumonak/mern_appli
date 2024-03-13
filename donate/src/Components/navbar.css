@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none !important;
+}
+
+.nvbr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    line-height: 7vh;
+    background-color: rgb(55, 52, 52);
+    color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+      
+      
+}
+
+.logo{
+    font-size: 30px;
+}
+.nv-links{
+    display: flex;
+    justify-content:flex-end;
+    width: 75%;
+}
+
+.container1{
+    max-width: 97%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+
+}
+li{
+    /* text-decoration: none; */
+    list-style: none;
+    display: grid;
+    justify-content: center;
+}
+.nv-links li{
+    color: white;
+    font-size: 14px;
+    padding: 0 7px;
+    margin: 0 7px;
+    cursor: pointer;
+    position: relative;
+    right: 98px;
+}
+
+.hero{
+    margin: auto;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+button{
+    border: none;
+    background: none;
+    position: absolute;
+  left: 86%;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media (max-width:942px){
+    .logo{
+        display: flex;
+        position: absolute;
+       
+       
+    }
+
+    .nv-links{
+        display: none;
+    }
+    .nv-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+        left: 0;
+        top:0%;
+        transition: all 0.5s ease-in-out ;
+        background-color: rgb(213, 28, 28);
+        text-align: center;
+        border-radius: 4px;
+        width: 70%;
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: white;
+        color: #fff;
+        padding: 14px 20px;
+        border: 1px solid #fff;
+        z-index: 11;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+}
+@media (min-width:768px){
+.nv-links-mobile{
+    display: none;
+}
+}
+
+.bg-dark {
+    --bs-bg-opacity: 0 !important;
+  }
+  
+  
+  .nav-link {
+    display: inline !important;
+  }
+
+  .navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y:0;
+    position: relative;
+    right:49px;
+  }
+ 
+  .navbar-dark, .navbar[data-bs-theme="dark"] {
+    --bs-navbar-color: rgb(255, 255, 255);
+  }
+
+  .navbar-dark, .navbar[data-bs-theme="dark"] {
+    --bs-navbar-color: rgb(126, 26, 26);
+  }
+  
+ .dropdown{
+    position: relative;
+    left: 43px;
+ }
+ 
+ 
+ 
+
+  .profile-btn{
+    position: relative;
+    bottom: 35px;
+    
+  }
+
+  .navbar-nav {
+    display: block;
+    left: 19px;
+    position: relative;
+  }
